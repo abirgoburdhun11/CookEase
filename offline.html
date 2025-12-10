@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookease - Offline</title>
+  <style>
+    :root {
+      --bg: #0f0f12;
+      --accent: #ff7a00;
+      --text: #f4f6f8;
+    }
+    
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .offline-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    
+    p {
+      margin-bottom: 24px;
+      opacity: 0.8;
+    }
+    
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-icon">📶</div>
+  <h1>You're Offline</h1>
+  <p>Cookease needs an internet connection to load new recipes.</p>
+  <p>You can still use cached recipes and timers.</p>
+  <button onclick="window.location.reload()">Retry Connection</button>
+  <button onclick="window.location.href='index.html'" style="margin-top: 12px; background: transparent; border: 1px solid var(--accent);">
+    Go to Homepage
+  </button>
+</body>
+</html>

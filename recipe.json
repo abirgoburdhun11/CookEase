@@ -1,0 +1,251 @@
+{
+ "food_recipes":[
+    {
+        "title": "Roti",
+        "ingredients": ["flour","water","salt","cooking oil"],
+        "instructions": [
+        "In a bowl, combine flour (2 cup), a pinch of salt (1/2 tps) and oil (2 tbps)",
+        "Gradually add more warm water (3/4 cup) and knead until smooth",
+        "Cover and let the dough rest for 30 minutes",
+        "Cut the dough into small balls (golf-sized balls)",
+        "Flatten each ball with a rolling pin into thin circles and dust with flour to prevent sticking",
+        "Heat a flat pan to medium to high flame",
+        "Apply a little oil on the heated pan",
+        "Place the roti (flattened dough)",
+        "Cook until the roti puffs up",
+        "Flip the roti over and let the other side cook until golden spots appear",
+        "Stack in a clean cloth to keep soft",
+        "Additionally enjoyed with curry, butter chicken, rougaille etc"
+        ],
+        "minimumDuration":"15-20 minutes (resting time excluded)"
+    },
+
+    {
+        "title":"Chicken Kalia",
+        "ingredients":["Chicken pieces","Plain yogurt","Onion","Tomatoes","Garlic","Ginger or ginger paste",
+                        "Potatoes","Fresh coriander","Turmeric powder","Chili powder or paprika",
+                        "Cumin powder","Coriander powder","Garam masala","Fennel powder (optional)",
+                        "Cardamom pods","Cloves","Cinnamon stick","Cooking oil or ghee","Salt"],
+        "instructions": [
+        "Mix chicken with yogurt, ginger paste, garlic, turmeric, chili powder, and salt. Rest 30 min–2 hr.",
+        "Heat oil or ghee in a large pot.",
+        "Add cinnamon stick, cardamom pods, and cloves. Sizzle a few seconds.",
+        "Add sliced onion and sauté until golden.",
+        "Add chopped tomatoes and cook until soft and saucy.",
+        "Add marinated chicken. Stir and cook 10–15 min until yogurt thickens and chicken browns.",
+        "Add potatoes.",
+        "Add cumin, coriander, garam masala, and optional fennel. Mix well.",
+        "Pour ½–1 cup water depending on desired gravy thickness.",
+        "Cover and simmer 25–30 min until chicken and potatoes are tender, stirring occasionally.",
+        "Taste and adjust salt or spices.",
+        "Garnish with fresh coriander and serve hot with roti, farata, rice, or dholl puri."
+        ],
+        "minimumDuration":"1 hour (resting time excluded)"
+    },
+
+    {
+        "title": "Fried noodles",
+        "ingredients":["eggs","onion","2 cloves garlic","1 carrot","cabbage","1 spring onion",
+                    "chicken, prawns, or sausage (optional)","soy sauce","oyster sauce (optional)",
+                    "chili paste (optional)","Salt & pepper","Cooking oil"
+                    ],
+        "instructions": [
+        "Boil noodles until just soft, drain, and set aside.",
+        "slice garlic and chop onions into thin slices",
+        "Heat wok/pan, fry garlic and onion until fragrant.",
+        "Add our optional meat and stir-fry until cooked.",
+        "Add remaining julienned vegetables and stir-fry for 2-3 minutes.",
+        "Mix in boiled noodles and stir well.",
+        "Season with sauces(soy and oyster sauce), salt, and pepper while stir-frying.",
+        "Stir-fry until noodles are evenly coated and slightly crispy.",
+        "Serve hot with garnish."
+        ],
+        "minimumDuration": "30 minutes"
+    },
+
+    {
+        "title": "Briyani",
+        "ingredients":["Chicken pieces","Basmati rice","Onions","Garlic","Ginger","Potatoes","Plain yogurt",
+                "Briyani masala","Turmeric powder","Chili powder","Coriander leaves","Mint leaves",
+                "Saffron milk","Oil or ghee","Salt"
+                ],
+        "instructions": [
+                "Marinate 1 kg chicken pieces with 1 cup plain yogurt, 2 tbsp briyani masala, 1 tsp turmeric powder, 1 tsp chili powder (optional), 1/2 cup coriander leaves, and 1/2 cup mint leaves for 1 hour.",
+                "Wash and soak 3 cups basmati rice, then boil until half-cooked.",
+                "Fry 3 large onions (thinly sliced) until golden then set aside.",
+                "Fry 2–3 potatoes (cut in half) until golden.",
+                "Layer marinated chicken, fried potatoes, parboiled rice, fried onions, and 1/2 cup saffron milk (optional) in a cooking pot",
+                "Cover tightly and steam on low heat for 30–40 minutes until chicken is tender and rice fully cooked.",
+                "Fluff gently and garnish with fresh coriander leaves(optional)",
+                "enjoy with cucumber or tomato salad, tamarind or mango pickle (achar)"
+                ],
+        "minimumDuration": "2 hours"
+    },
+
+    {
+        "title": "Boul Enversé",
+        "ingredients":["Cooked rice","Chicken, beef, or prawns","Onion","Garlic","Carrot","Cabbage",
+                    "Soy sauce","Oyster sauce","Cornflour","Oil","Salt & pepper","Spring onions"
+        ],
+        "instructions": [
+        "Cook 2 cups rice and keep warm.",
+        "Heat 2 tbsp oil in a wok, fry 200g chicken, beef, or prawns until cooked. Remove and set aside.",
+        "In the same wok, fry 1 onion (sliced), 2 cloves garlic (chopped), 1 carrot (julienned), and 1/2 cup cabbage (shredded) until tender.",
+        "Add 2 tbsp soy sauce, 1 tbsp oyster sauce (optional), and a little water. Stir in 1 tbsp cornflour mixed with water to thicken.",
+        "Return protein to wok, mix well with sauce and vegetables. Adjust salt & pepper.",
+        "Place stir-fry mixture at the bottom of a bowl.",
+        "Pack warm rice tightly on top, invert onto a plate.",
+        "Garnish with spring onions and chili paste if desired."
+        ],
+        "minimumDuration": "30 minutes"
+    },
+
+    {
+        "title": "Homemade Pizza",
+        "ingredients": [
+        "All-purpose flour",
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Olive oil",
+        "water",
+        "Tomato sauce",
+        "Mozzarella cheese",
+        "Toppings (sausages, chicken, vegetables)",
+        "Dried oregano or basil"
+        ],
+        "instructions": [
+            "Mix 1 tsp yeast, 1 tsp sugar, and 3/4 cup warm water. Let sit for 5–10 minutes until foamy.",
+            "In a bowl, combine 2 cups all-purpose flour, 1/2 tsp salt, 2 tbsp olive oil, and the yeast mixture. Knead until smooth.",
+            "Cover and let the dough rise for 1–2 hours until doubled in size.",
+            "Roll out the dough into a round pizza base.",
+            "Spread 1/2 cup tomato sauce (or rougaille-style tomato base) over the base.",
+            "Sprinkle 1 cup grated mozzarella cheese and add your choice of toppings: sliced sausages, chicken, onions, peppers, mushrooms, or local favorites.",
+            "Bake in a preheated oven at 200°C for 15–20 minutes until the crust is golden and cheese melts.",
+            "Garnish with dried oregano or basil. Slice and enjoy hot."
+        ],
+        "minimumDuration": "1 hour 30 minutes"
+    },
+
+    {
+      "title": "Rougaille Saucisse",
+      "ingredients": [
+        "sausages (chicken, beef, or pork)",
+        "tomatoes",
+        "onions,",
+        "garlic",
+        "ginger, ",
+        "green chilies (optional)",
+        "sprigs thyme",
+        "2 tbsp oil",
+        "Salt & pepper to taste",
+        "Fresh coriander for garnish"
+      ],
+      "instructions": [
+        "Boil sausages for 5-10 minutes, drain and slice.",
+        "Heat oil, fry onions until soft.",
+        "Add a little garlic, ginger, chilies, stir until fragrant.",
+        "Add tomatoes and thyme, cook into thick sauce.",
+        "Mix in sausages and coat with sauce.",
+        "Simmer for 10-15 minutes.",
+        "Season and garnish with coriander.",
+        "Serve hot with rice or bread."
+      ],
+      "minimumDuration": "35 minutes"
+    },
+
+    {
+        "title": "Lasagne",
+        "ingredients": [
+        "Lasagne sheets",
+        "Minced beef or chicken",
+        "Garlic",
+        "butter",
+        "Tomatoes or tomato puree (optional)",
+        "Tomato paste or ketchup",
+        "Mushrooms (optional)",
+        "Oil",
+        "Thyme (optional)",
+        "Oregano (optional)",
+        "Salt & pepper",
+        "cooking cream",
+        "Mozzarella or cheddar cheese"
+        ],
+        "instructions": [
+        "Heat 2 tbsp oil and 3 cloves garlic (chopped) until fragrant.",
+        "Add 500g minced meat and cook until browned.",
+        "Stir in 3 chopped tomatoes (or 1 cup puree), 2 tbsp tomato paste or ketchup, 1 cup mushrooms (optional), 1 tsp thyme (optional), and 1 tsp oregano (optional). Simmer until the sauce is thick.",
+        "Prepare cheese sauce: melt butter (20ml) and cheese, gradually add cooking cream, whisk until smooth. Season with salt, pepper",
+        "In a baking dish, spread a little oil, layer lasagne sheets, cheese sauce meat sauce on top, more tomato sauce, and cheese. Repeat until full.",
+        "Top with tomato sauce and a generous layer of cheese.",
+        "Bake at 180°C for 30–40 minutes until golden and fluffed",
+        "Serve with salad (optional)"
+        ],
+        "minimumDuration": "1 hour 15 minutes"
+    },
+
+    {
+        "title": "Vindaye Poisson",
+        "ingredients": ["Firm fish","Onions","Garlic","Ginger","Green chilies",
+                        "Mustard seeds","Turmeric powder","Vinegar","Oil","Salt"
+                       ],
+        "instructions": [
+            "Clean and cut 500g fish into medium chunks. Season with salt and 1 tsp turmeric powder.",
+            "Heat 3 tbsp oil in a pan, fry fish pieces until golden. Remove and set aside.",
+            "Grind 2 tbsp mustard seeds into a paste. Mix with turmeric, 3 cloves garlic (chopped), 1 piece ginger (grated), and 1/2 cup vinegar.",
+            "In the same pan, fry 2 large onions (sliced) until soft. Add 2 green chilies (optional) and vindaye paste. Cook until fragrant.",
+            "Return fried fish to the pan and coat well with the paste.",
+            "Add a splash of water if needed. Simmer for 5 minutes.",
+            "Let cool. Traditionally left overnight to absorb flavors.",
+            "Serve cold or at room temperature with bread, rice, or farata."
+            ],
+        "minimumDuration": "1 hour"
+    },
+
+    {
+       "title": "Macaroni egg rougaille",
+      "ingredients": [
+        "Macaroni pasta",
+        "Eggs",
+        "Onion",
+        "Garlic",
+        "Tomatoes",
+        "Spring onion",
+        "Green chilies (optional)",
+        "Oil",
+        "Salt & pepper",
+        "Fresh coriander"
+      ],
+      "instructions": [
+        "Boil 250g macaroni pasta in salted water while stirring (to prevent sticking) until it reaches an ideal texture (smooth and tender). Drain and set aside.",
+        "Heat 2 tbsp oil in a pan. Fry 1 onion (sliced) and 2 cloves garlic (chopped) until fragrant.",
+        "Add 2 chopped tomatoes and 1 chopped green chili (optional). Cook until tomatoes soften.",
+        "Crack 3 eggs directly into the pan. Stir and scramble until cooked.",
+        "Add boiled macaroni and mix well with the egg mixture.",
+        "Season with salt and pepper to taste.",
+        "Garnish with chopped spring onion and fresh coriander.",
+        "Serve hot with optional salad."
+      ],
+      "minimumDuration": "30 minutes"
+    },
+
+    {
+      "title": "Salad",
+      "ingredients": [
+        "Cucumber",
+        "Tomato",
+        "Carrot",
+        "Lettuce",
+        "Lemon juice",
+        "Salt & pepper"
+      ],
+      "instructions": [
+        "Slice 1 cucumber, 1 tomato, and 1 carrot into thin strips.",
+        "Tear lettuce leaves and mix with other vegetables.",
+        "Drizzle with lemon juice and season with salt and pepper.",
+        "Toss well and serve chilled"
+      ],
+      "minimumDuration": "10 minutes"
+    }
+]
+}

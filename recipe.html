@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#ff7a00">
+  <title>Cookease — Recipe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+  <header class="app-header">
+    <button class="home-btn" onclick="window.location.href='index.html'">
+      <img src="assets/logo.png" alt="Cookease Logo" class="logo" />
+      <span>Cookease</span>
+    </button>
+    <button class="back-btn" onclick="window.history.back()">Back</button>
+  </header>
+
+  <main class="container">
+    <div id="recipeCard" class="detail-card glass">
+      <!-- Recipe content will be loaded here by JavaScript -->
+    </div>
+    
+    <div class="actions">
+      <button id="startCooking" class="primary-btn">Start cooking</button>
+      <button onclick="window.print()" class="secondary-btn">Print Recipe</button>
+      <button id="shareBtn" class="secondary-btn">Share Recipe</button>
+    </div>
+  </main>
+
+  <script src="recipe.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#ff7a00">
+  <title>Cookease — Voice-Controlled Cooking</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="cooking-page">
+  <header class="app-header">
+    <button class="home-btn" onclick="window.location.href='index.html'">
+      <img src="assets/logo.png" alt="Cookease Logo" class="logo" />
+      <span>Cookease</span>
+    </button>
+    
+    <div class="voice-control-header">
+      <div id="recordingStatus" class="recording-status">
+        <i class="fas fa-microphone-slash"></i>
+        <span>Voice Control: Off</span>
+      </div>
+      <button id="guideToggle" class="guide-btn">
+        <i class="fas fa-question-circle"></i>
+      </button>
+      <button id="timerToggleBtn" class="timer-toggle-btn">
+        <i class="fas fa-clock"></i>
+        <span class="timer-badge" id="timerBadge">0:00</span>
+      </button>
+    </div>
+    
+    <button class="back-btn" onclick="window.history.back()">Back</button>
+  </header>
+
+  <main class="container">
+    <h2 id="recipeTitle" class="page-subtitle">Voice-Controlled Cooking</h2>
+    
+    <!-- Current Instruction Display -->
+    <div class="instruction-display glass">
+      <div class="instruction-header">
+        <h3><i class="fas fa-list-ol"></i> Current Step</h3>
+        <div class="step-counter">
+          <span id="currentStep">0</span>/<span id="totalSteps">0</span>
+        </div>
+      </div>
+      <div id="instructionText" class="instruction-text">
+        Select a recipe to begin. Say "show [recipe name]" or choose from homepage.
+      </div>
+      <div id="instructionProgress" class="instruction-progress"></div>
+    </div>
+    
+    <!-- Quick Voice Commands -->
+    <div class="voice-commands glass">
+      <h3><i class="fas fa-microphone"></i> Quick Commands</h3>
+      <div class="command-buttons">
+        <button class="voice-command-btn" data-command="next step">
+          <i class="fas fa-forward"></i> Next Step
+        </button>
+        <button class="voice-command-btn" data-command="previous step">
+          <i class="fas fa-backward"></i> Previous Step
+        </button>
+        <button class="voice-command-btn" data-command="repeat step">
+          <i class="fas fa-redo"></i> Repeat
+        </button>
+        <button class="voice-command-btn" data-command="ingredients">
+          <i class="fas fa-list"></i> Ingredients
+        </button>
+        <button class="voice-command-btn" data-command="show timer">
+          <i class="fas fa-clock"></i> Show Timer
+        </button>
+      </div>
+    </div>
+    
+    <div class="cooking-notes">
+      <h3><i class="fas fa-lightbulb"></i> Voice Control Tips</h3>
+      <ul>
+        <li>Say "show [recipe name]" to load a recipe</li>
+        <li>Say "next step" or "previous step" to navigate</li>
+        <li>Say "start timer" or "stop timer" for timer control</li>
+        <li>Say "ingredients" to hear the ingredient list</li>
+        <li>Say "show timer" to open/close timer popup</li>
+        <li>For timed steps, I'll automatically suggest a timer</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Timer Popup -->
+  <div id="timerPopup" class="timer-popup" style="display: none;">
+    <div class="timer-popup-content glass">
+      <div class="timer-popup-header">
+        <h3><i class="fas fa-clock"></i> Cooking Timer</h3>
+        <button id="closeTimerBtn" class="close-timer-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="timer-content">
+        <div id="timeDisplay" class="time-display">00:15:00</div>
+        
+        <div class="progress-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        
+        <div class="timer-controls">
+          <button id="startBtn" class="primary-btn">Start</button>
+          <button id="pauseBtn" class="secondary-btn">Pause</button>
+          <button id="resetBtn" class="secondary-btn">Reset</button>
+        </div>
+        
+        <div class="timer-inputs">
+          <div class="input-group">
+            <label for="minutesInput">Minutes:</label>
+            <input type="number" id="minutesInput" min="0" max="120" value="15" />
+          </div>
+          <div class="input-group">
+            <label for="secondsInput">Seconds:</label>
+            <input type="number" id="secondsInput" min="0" max="59" value="0" />
+          </div>
+          <button id="setTimeBtn" class="secondary-btn">Set Time</button>
+        </div>
+        
+        <div class="timer-presets">
+          <button class="preset-btn" data-minutes="5">5 min</button>
+          <button class="preset-btn" data-minutes="10">10 min</button>
+          <button class="preset-btn" data-minutes="15">15 min</button>
+          <button class="preset-btn" data-minutes="30">30 min</button>
+        </div>
+        
+        <div class="timer-status">
+          <div id="timerStatus" class="status-text">Timer ready</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Guide Overlay -->
+  <div id="guideOverlay" class="guide-overlay">
+    <div class="guide-content glass">
+      <div class="guide-header">
+        <h2><i class="fas fa-info-circle"></i> Voice Commands Guide</h2>
+        <button id="closeGuide" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="guide-sections">
+        <div class="guide-section">
+          <h3><i class="fas fa-utensils"></i> Recipe Navigation</h3>
+          <ul>
+            <li><strong>"show [recipe name]"</strong> - Load a recipe</li>
+            <li><strong>"next step"</strong> - Move to next instruction</li>
+            <li><strong>"previous step"</strong> - Go back one step</li>
+            <li><strong>"repeat step"</strong> - Repeat current instruction</li>
+            <li><strong>"ingredients"</strong> - Hear ingredient list</li>
+          </ul>
+        </div>
+        
+        <div class="guide-section">
+          <h3><i class="fas fa-clock"></i> Timer Control</h3>
+          <ul>
+            <li><strong>"start timer"</strong> - Start the timer</li>
+            <li><strong>"stop timer" / "pause timer"</strong> - Pause timer</li>
+            <li><strong>"reset timer"</strong> - Reset to initial time</li>
+            <li><strong>"set timer [X] minutes"</strong> - Set specific time</li>
+            <li><strong>"show timer"</strong> - Open/close timer popup</li>
+          </ul>
+        </div>
+        
+        <div class="guide-section">
+          <h3><i class="fas fa-search"></i> Search</h3>
+          <ul>
+            <li><strong>"search [ingredient]"</strong> - Find recipes with ingredient</li>
+            <li><strong>"find recipes with [ingredient]"</strong> - Search by ingredient</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="guide-footer">
+        <button id="neverShowAgain" class="secondary-btn">
+          <i class="fas fa-eye-slash"></i> Never Show Again
+        </button>
+        <button id="startListeningGuide" class="primary-btn">
+          <i class="fas fa-microphone"></i> Start Listening
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="cooking.js"></script>
+</body>
+</html>
